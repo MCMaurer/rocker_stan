@@ -21,6 +21,7 @@ RUN apt-get update \
 
 # installing rstan
 RUN install2.r --error --deps TRUE \
+    Rcpp \
     rstan \
     && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
