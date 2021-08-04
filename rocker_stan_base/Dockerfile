@@ -1,7 +1,7 @@
 FROM rocker/tidyverse:latest
 
 # copying the .R folder with Makevars
-COPY ../build_imports/.R /home/rstudio/.R
+COPY build_imports/.R /home/rstudio/.R
 
 # rstudio owns ~
 RUN chown -R rstudio:rstudio /home/rstudio/
