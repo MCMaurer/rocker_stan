@@ -21,9 +21,14 @@ RUN apt-get update \
 
 # installing rstan
 RUN install2.r --error --deps TRUE \
-    Rcpp \
     rstan \
     && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
+
+# installing Rcpp
+RUN install2.r --error --deps FALSE \
+    Rcpp \
+    && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
+
 
 # need to get graph as a dep for igraph
 RUN R -e "BiocManager::install('graph')"
