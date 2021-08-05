@@ -10,7 +10,9 @@ Quick semi-realistic test of speed running `brms` models in RStudio on various p
 ## Platforms
 
 `gpu06`: a speedy 256-core Ubuntu node
+
 `local`: non-Docker on 16" MacBook Pro 2.4 GHz 8-Core Intel Core i9 32GB RAM
+
 `VICE`: CyVerse VICE cloud, set with 8 cores, 16GB RAM, 64GB scratch
 
 **NOTE** I ran `local` while doing other stuff on my laptop (writing some code, watching a video), which is, for my money, the most honest comparison to cloud-based options, since I can also do other stuff while I'm running models remotely.
